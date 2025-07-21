@@ -1,22 +1,26 @@
 {
-  "name": "my-appnpx",
-  "version": "0.1.0",
+  "name": "ryan-studioz",
+  "version": "1.0.0",
   "private": true,
+  "homepage": "https://karthimarimuthu95.github.io/ryan-studioz",
   "dependencies": {
-    "@testing-library/dom": "^10.4.0",
-    "@testing-library/jest-dom": "^6.6.3",
-    "@testing-library/react": "^16.3.0",
-    "@testing-library/user-event": "^13.5.0",
-    "react": "^19.1.0",
-    "react-dom": "^19.1.0",
+    "react": "^18.3.0",
+    "react-dom": "^18.3.0",
+    "react-router-dom": "^6.23.0",
+    "bootstrap": "^5.3.3",
+    "gh-pages": "^6.1.1",
     "react-scripts": "5.0.1",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^3.3.0"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "gitsetup": "git init && git remote add origin https://github.com/karthimarimuthu95/ryan-studioz.git && git add . && git commit -m 'Initial commit' || echo Already initialized && git branch -M main && git push -u origin main",
+    "setup-and-deploy": "npm run gitsetup && npm run deploy"
   },
   "eslintConfig": {
     "extends": [
