@@ -19,8 +19,7 @@
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "gitsetup": "git init && git remote add origin https://github.com/karthimarimuthu95/ryan-studioz.git && git add . && git commit -m 'Initial commit' || echo Already initialized && git branch -M main && git push -u origin main",
-    "setup-and-deploy": "npm run gitsetup && npm run deploy"
+    "gitsetup": "git init && git remote add origin https://github.com/karthimarimuthu95/ryan-studioz.git && git add . && git commit -m 'Initial commit' || echo Already initialized && git branch -M main && git push -u origin main"
   },
   "eslintConfig": {
     "extends": [
